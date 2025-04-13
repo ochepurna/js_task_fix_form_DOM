@@ -10,6 +10,14 @@ inputs.forEach((input) => {
   label.textContent = input.name;
   input.parentNode.insertBefore(label, input);
 
+  if (label.textContent === 'firstName') {
+    label.textContent = 'First Name';
+  }
+
+  if (label.textContent === 'lastName') {
+    label.textContent = 'Last Name';
+  }
+
   let placeholder = input.name[0].toUpperCase() + input.name.slice(1);
 
   if (placeholder === 'FirstName') {
